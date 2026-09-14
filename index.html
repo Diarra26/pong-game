@@ -8,24 +8,27 @@
 </head>
 <body>
     <div class="container">
-        <h1>Pong Game</h1>
         <div class="scoreboard">
             <div class="score">
-                <p>Player</p>
-                <span id="playerScore">0</span>
+                <span class="label">Player</span>
+                <span class="score-value" id="playerScore">0</span>
             </div>
+            <div class="divider"></div>
             <div class="score">
-                <p>Computer</p>
-                <span id="computerScore">0</span>
+                <span class="label">Computer</span>
+                <span class="score-value" id="computerScore">0</span>
             </div>
         </div>
+        
         <canvas id="gameCanvas" width="800" height="400"></canvas>
+        
         <div class="controls">
             <p>Controls:</p>
-            <p>🖱️ Mouse Y-axis or ⬆️⬇️ Arrow Keys to move left paddle</p>
-            <p>Press <strong>SPACE</strong> to start/restart</p>
+            <p>🖱️ Mouse Y-position OR ⬆️⬇️ Arrow Keys</p>
+            <p>First to 11 points wins!</p>
         </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
